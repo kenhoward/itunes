@@ -16,8 +16,16 @@
           </div>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
+<!--            <select ng-model='dropdown'>
+                <option></option>
+                <option>Artist</option>
+                <option>Media Type</option>
+                <option>Media Item Name</option>
+                <option>Collection Name</option>                
+              </select>   -->
               <input type="text" class="form-control" ng-model="artist" placeholder="Artist Name" >
               <button class="btn btn-primary" ng-click="getSongData()"> Submit </button>
+<!--          <input type ='text' class='form-control' ng-model='filter' placeholder='Filter'> -->
             </div>
           </form>
         </div>
@@ -26,6 +34,7 @@
     <div class="panel panel-default">
       <div class="panel-heading"> Your Search Results:</div>
      <div class="gridStyle" ng-grid="gridOptions" swap-image="defaultInfo.search"></div>
+     <input type='text' class='form-control' ng-model='filterBy' placeholder
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
